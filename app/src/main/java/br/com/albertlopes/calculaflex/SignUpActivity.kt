@@ -33,7 +33,6 @@ class SignUpActivity : AppCompatActivity() {
             }
         }
     }
-
     private fun saveInRealTimeDatabase() {
         val user = User(inputName.text.toString(), inputEmail.text.toString(), inputPhone.text.toString())
         FirebaseDatabase.getInstance().getReference("Users")
